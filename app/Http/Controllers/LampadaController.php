@@ -15,7 +15,6 @@ class LampadaController extends Controller
     {
         //$this->middleware('auth');
     }
-
     /**
      * Show the application dashboard.
      *
@@ -25,7 +24,6 @@ class LampadaController extends Controller
     {
         return view('cozinha');
     }
-
     public function ligar(){
         //Executa o script na pasta python - comando para ligar lâmpada
         $comando = 'cd ./python && python ligar.py';
@@ -40,5 +38,4 @@ class LampadaController extends Controller
         //Redireciona a página para /cozinha após executar o comando
         return redirect('/cozinha');
     }
-
 }
