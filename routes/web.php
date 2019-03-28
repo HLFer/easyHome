@@ -29,11 +29,20 @@ Route::group(['prefix' => '/'], function () {
     Route::get('/lavanderia', 'LavanderiaController@index')->name('lavanderia');
     Route::get('/jardim', 'JardimController@index')->name('jardim');
 });
-
+//Rotas para ligar e desligar lampadas
 Route::group(['prefix' => '/lampada'], function () {
     Route::get('/ligar', 'LampadaController@ligar');
     Route::get('/desligar', 'LampadaController@desligar');
 
 });
+//Rotas para ligar e desligar o ventilador
+Route::group(['prefix' => '/ventilador'], function(){
+    Route::get('/ligar', 'VentiladorController@ligar');
+    Route::get('/desligar', 'VentiladorController@desligar');
+});
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -1,20 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header text-white bg-dark">EasyHome</div>
-                <div class="row justify-content-center">
-                   <h3>Você está na Sala</h3>
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<div class="container mainclass">
+  
 
-                   <a type="button" class="btn btn-primary btn-lg btn-block" href="#">Lâmpada do teto</a>
+    <a type="button" class="btn btn-success btn-lg btn-block" href="lampada/ligar">Ligar Lâmpada</a>
+    <a type="button" class="btn btn-danger btn-lg btn-block" href="lampada/desligar">Desligar Lâmpada</a>
 
-                </div>
-    
-            </div>
-        </div>
-    </div>
+
+    <a type="button" class="btn btn-success btn-lg btn-block" href="ventilador/ligar">Ligar Ventilador</a>
+    <a type="button" class="btn btn-danger btn-lg btn-block" href="ventilador/desligar">Desligar Ventilador</a>
+
+
 </div>
+
 @endsection
