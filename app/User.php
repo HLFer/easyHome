@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace EasyHome;
 
 use Laravel\Passport\HasApiTokens;
 

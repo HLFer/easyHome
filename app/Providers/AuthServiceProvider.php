@@ -1,5 +1,5 @@
 <?php
-namespace App\Providers;
+namespace EasyHome\Providers;
 
 use Laravel\Passport\Passport; 
 
@@ -15,7 +15,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array 
      */ 
     protected $policies = [ 
-        'App\Model' => 'App\Policies\ModelPolicy', 
+        'EasyHome\Model' => 'EasyHome\Policies\ModelPolicy', 
     ];
 
     /** 

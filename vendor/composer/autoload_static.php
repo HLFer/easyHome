@@ -144,6 +144,7 @@ class ComposerStaticInit605e243aaffa9979cb8529156eabe1e6
         'E' => 
         array (
             'Egulias\\EmailValidator\\' => 23,
+            'EasyHome\\' => 9,
         ),
         'D' => 
         array (
@@ -163,10 +164,6 @@ class ComposerStaticInit605e243aaffa9979cb8529156eabe1e6
         'B' => 
         array (
             'BeyondCode\\DumpServer\\' => 22,
-        ),
-        'A' => 
-        array (
-            'App\\' => 4,
         ),
     );
 
@@ -398,6 +395,10 @@ class ComposerStaticInit605e243aaffa9979cb8529156eabe1e6
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
         ),
+        'EasyHome\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
@@ -438,10 +439,6 @@ class ComposerStaticInit605e243aaffa9979cb8529156eabe1e6
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src',
         ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
-        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -477,39 +474,6 @@ class ComposerStaticInit605e243aaffa9979cb8529156eabe1e6
     );
 
     public static $classMap = array (
-        'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\API\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/UserController.php',
-        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
-        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
-        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
-        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
-        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
-        'App\\Http\\Controllers\\BanheiroController' => __DIR__ . '/../..' . '/app/Http/Controllers/BanheiroController.php',
-        'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\CozinhaController' => __DIR__ . '/../..' . '/app/Http/Controllers/CozinhaController.php',
-        'App\\Http\\Controllers\\GaragemController' => __DIR__ . '/../..' . '/app/Http/Controllers/GaragemController.php',
-        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-        'App\\Http\\Controllers\\JardimController' => __DIR__ . '/../..' . '/app/Http/Controllers/JardimController.php',
-        'App\\Http\\Controllers\\LampadaController' => __DIR__ . '/../..' . '/app/Http/Controllers/LampadaController.php',
-        'App\\Http\\Controllers\\LavanderiaController' => __DIR__ . '/../..' . '/app/Http/Controllers/LavanderiaController.php',
-        'App\\Http\\Controllers\\QuartoController' => __DIR__ . '/../..' . '/app/Http/Controllers/QuartoController.php',
-        'App\\Http\\Controllers\\SalaController' => __DIR__ . '/../..' . '/app/Http/Controllers/SalaController.php',
-        'App\\Http\\Controllers\\VentiladorController' => __DIR__ . '/../..' . '/app/Http/Controllers/VentiladorController.php',
-        'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
-        'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
-        'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
-        'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
-        'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
-        'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
-        'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
-        'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
-        'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
-        'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
-        'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
-        'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
@@ -866,6 +830,39 @@ class ComposerStaticInit605e243aaffa9979cb8529156eabe1e6
         'Dotenv\\Exception\\ValidationException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ValidationException.php',
         'Dotenv\\Loader' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Loader.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
+        'EasyHome\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'EasyHome\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'EasyHome\\Http\\Controllers\\API\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/UserController.php',
+        'EasyHome\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'EasyHome\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'EasyHome\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'EasyHome\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'EasyHome\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'EasyHome\\Http\\Controllers\\BanheiroController' => __DIR__ . '/../..' . '/app/Http/Controllers/BanheiroController.php',
+        'EasyHome\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'EasyHome\\Http\\Controllers\\CozinhaController' => __DIR__ . '/../..' . '/app/Http/Controllers/CozinhaController.php',
+        'EasyHome\\Http\\Controllers\\GaragemController' => __DIR__ . '/../..' . '/app/Http/Controllers/GaragemController.php',
+        'EasyHome\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'EasyHome\\Http\\Controllers\\JardimController' => __DIR__ . '/../..' . '/app/Http/Controllers/JardimController.php',
+        'EasyHome\\Http\\Controllers\\LampadaController' => __DIR__ . '/../..' . '/app/Http/Controllers/LampadaController.php',
+        'EasyHome\\Http\\Controllers\\LavanderiaController' => __DIR__ . '/../..' . '/app/Http/Controllers/LavanderiaController.php',
+        'EasyHome\\Http\\Controllers\\QuartoController' => __DIR__ . '/../..' . '/app/Http/Controllers/QuartoController.php',
+        'EasyHome\\Http\\Controllers\\SalaController' => __DIR__ . '/../..' . '/app/Http/Controllers/SalaController.php',
+        'EasyHome\\Http\\Controllers\\VentiladorController' => __DIR__ . '/../..' . '/app/Http/Controllers/VentiladorController.php',
+        'EasyHome\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'EasyHome\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
+        'EasyHome\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
+        'EasyHome\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'EasyHome\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
+        'EasyHome\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
+        'EasyHome\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
+        'EasyHome\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'EasyHome\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'EasyHome\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
+        'EasyHome\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
+        'EasyHome\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
+        'EasyHome\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'EasyHome\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Egulias\\EmailValidator\\EmailLexer' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailLexer.php',
         'Egulias\\EmailValidator\\EmailParser' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailParser.php',
         'Egulias\\EmailValidator\\EmailValidator' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailValidator.php',

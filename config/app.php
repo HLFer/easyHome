@@ -170,11 +170,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        EasyHome\Providers\AppServiceProvider::class,
+        EasyHome\Providers\AuthServiceProvider::class,
+        // EasyHome\Providers\BroadcastServiceProvider::class,
+        EasyHome\Providers\EventServiceProvider::class,
+        EasyHome\Providers\RouteServiceProvider::class,
 
     ],
 

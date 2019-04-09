@@ -1,11 +1,11 @@
 <?php
-namespace App\Http\Controllers\API;
+namespace EasyHome\Http\Controllers\API;
 
 use Illuminate\Http\Request; 
 
-use App\Http\Controllers\Controller; 
+use EasyHome\Http\Controllers\Controller; 
 
-use App\User; 
+use EasyHome\User; 
 
 use Illuminate\Support\Facades\Auth; 
 

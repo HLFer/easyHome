@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace EasyHome\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
