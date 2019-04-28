@@ -3,6 +3,7 @@
 namespace EasyHome\Http\Controllers;
 
 use Illuminate\Http\Request;
+use EasyHome\Http\Controllers\DispositivosController;
 
 class CozinhaController extends Controller
 {

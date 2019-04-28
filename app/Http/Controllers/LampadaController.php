@@ -26,14 +26,14 @@ class LampadaController extends Controller
     }
     public function ligar(){
         //Executa o script na pasta python - comando para ligar lâmpada
-        $comando = 'cd ../scripts && python ligar.py';
+        $comando = "cd ../scripts && python ligar.py";
         pclose(popen($comando, 'r'));
         //Redireciona a página para /cozinha após executar o comando
         return redirect('/cozinha');
     }
-    public function desligar(){
+    public function desligar($comodo){
         //Executa o script na pasta python - comando para desligar lâmpada
-        $comando = 'cd ../scripts && python desligar.py';
+        $comando = "cd ../scripts && python desligar.py";
         pclose(popen($comando, 'r'));
         //Redireciona a página para /cozinha após executar o comando
         return redirect('/cozinha');
