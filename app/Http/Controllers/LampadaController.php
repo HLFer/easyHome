@@ -22,20 +22,20 @@ class LampadaController extends Controller
      */
     public function index()
     {
-        return view('cozinha');
+        return view('sala');
     }
     public function ligar(){
         //Executa o script na pasta python - comando para ligar lâmpada
         $comando = "cd ../scripts && python ligar.py";
         pclose(popen($comando, 'r'));
         //Redireciona a página para /cozinha após executar o comando
-        return redirect('/cozinha');
+        return redirect('/sala');
     }
-    public function desligar($comodo){
+    public function desligar(){
         //Executa o script na pasta python - comando para desligar lâmpada
         $comando = "cd ../scripts && python desligar.py";
         pclose(popen($comando, 'r'));
         //Redireciona a página para /cozinha após executar o comando
-        return redirect('/cozinha');
+        return redirect('/sala');
     }
 }
