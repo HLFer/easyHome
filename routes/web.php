@@ -21,7 +21,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::group(['prefix' => '/'], function () {
+
     Route::get('/sala', 'SalaController@index')->name('sala');
+
+
+    /*
+    Route::get('/sala/{aciona}', function ($aciona) {
+        if ($aciona == 0) {
+            return $aciona;
+        } else {
+            return $aciona;
+        }
+    })->name('sala');
+*/
+
     Route::get('/cozinha', 'CozinhaController@index')->name('cozinha');
     Route::get('/banheiro', 'BanheiroController@index')->name('banheiro');
     Route::get('/quarto', 'QuartoController@index')->name('quarto');
@@ -30,15 +43,14 @@ Route::group(['prefix' => '/'], function () {
     Route::get('/jardim', 'JardimController@index')->name('jardim');
 });
 //Rotas para ligar e desligar lampadas
-Route::group(['prefix' => '/lampada'], function () {
-    Route::get('/ligar', 'LampadaController@ligar');
-    Route::get('/desligar', 'LampadaController@desligar');
-
+Route::group(['prefix' => '/lampada'], function ($comodo) {
+    Route::get('/ligar/{comodo}', 'LampadaController@ligar');
+    Route::get('/desligar/{comodo}', 'LampadaController@desligar');
 });
 //Rotas para ligar e desligar o ventilador
-Route::group(['prefix' => '/ventilador'], function(){
-    Route::get('/ligar', 'VentiladorController@ligar');
-    Route::get('/desligar', 'VentiladorController@desligar');
+Route::group(['prefix' => '/ventilador'], function ($comodo) {
+    Route::get('/ligar/{comodo}', 'VentiladorController@ligar');
+    Route::get('/desligar/{comodo}', 'VentiladorController@desligar');
 });
 
 
