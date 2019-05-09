@@ -27,7 +27,7 @@ class LampadaController extends Controller
     public function ligar($comodo)
     {
         //Executa o script na pasta python - comando para ligar lâmpada
-        $comando = "cd ../scripts && python ligar.py";
+        $comando = "cd ../scripts && python ligar.py $comodo";
         pclose(popen($comando, 'r'));
         //Redireciona a página para /cozinha após executar o comando
         return redirect($comodo);
